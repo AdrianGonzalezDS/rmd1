@@ -4,8 +4,8 @@ author: "Adrián González"
 date: "19 de Mayo de 2019"
 output:
   html_document: default
-  pdf_document: default
   word_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -105,5 +105,13 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 ```{r ressure2, echo=FALSE, fig.height=4, fig.width=4}
 plot(pressure)
+```
+
+
+## Insert tables
+
+```{r table1, echo=TRUE}
+knitr::kable(head(cars),
+             caption = "Top 6 Rows of Cars Dtaset")
 ```
 
