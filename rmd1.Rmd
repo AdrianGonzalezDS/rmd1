@@ -3,8 +3,8 @@ title: "R Markdown document One"
 author: "Adrián González"
 date: "19 de Mayo de 2019"
 output:
-  html_document: default
   word_document: default
+  html_document: default
   pdf_document: default
 ---
 
