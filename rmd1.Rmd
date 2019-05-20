@@ -3,9 +3,9 @@ title: "R Markdown document One"
 author: "Adrián González"
 date: "19 de Mayo de 2019"
 output:
-  word_document: default
-  pdf_document: default
   html_document: default
+  pdf_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -119,11 +119,23 @@ knitr::kable(head(cars),
 
 ### Modelo de Wood
 
-$$  y=at^{b}e^{-ct} $$
+$$  y=at^{b}e^{-ct} $$^[a= ; b= ; c= ; t= postpartum day]
 
 
 ## Insert Images
 
+<!-- ![r logo](https://www.r-project.org/logo/Rlogo.png) -->
+
+![r logo_local](figures/Rlogo.png)
 
 ![Ajustando producción de leche (kg) al modelo de Wood](figures/lactancia.png)
 
+## Insert text with some footnotes
+
+Here is footnote [^1] and another [^longnote]
+
+and this is inline footnote ^[Inline notes are easier to write, since you don't have to pick an identifier and move down to type the note.]
+
+
+[^1]: Here is the footnote.
+[^longnote]: Here's one with multiple blocks
