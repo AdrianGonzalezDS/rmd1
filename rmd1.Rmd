@@ -3,9 +3,9 @@ title: "R Markdown document One"
 author: "Adrián González"
 date: "19 de Mayo de 2019"
 output:
+  pdf_document: default
   html_document: default
   word_document: default
-  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -115,3 +115,8 @@ knitr::kable(head(cars),
              caption = "Top 6 Rows of Cars Dtaset")
 ```
 
+## Insert an equation
+
+$$  Y= \beta_0 + \beta_1x $$
+
+$$ y= \frac{a}{b}\alpha > \epsilon ^{a} $$
