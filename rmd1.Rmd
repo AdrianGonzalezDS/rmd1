@@ -3,9 +3,9 @@ title: "R Markdown document One"
 author: "Adrián González"
 date: "19 de Mayo de 2019"
 output:
+  word_document: default
   pdf_document: default
   html_document: default
-  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -117,6 +117,13 @@ knitr::kable(head(cars),
 
 ## Insert an equation
 
-$$  Y= \beta_0 + \beta_1x $$
+### Modelo de Wood
 
-$$ y= \frac{a}{b}\alpha > \epsilon ^{a} $$
+$$  y=at^{b}e^{-ct} $$
+
+
+## Insert Images
+
+
+![Ajustando producción de leche (kg) al modelo de Wood](figures/lactancia.png)
+
